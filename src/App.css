@@ -1,5 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .App {
   text-align: center;
+  background-image: url("./brain.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container>* {
+  margin: 20px auto;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+  font-size: 20px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+nav {
+  margin: 20px auto;
+}
+
+svg {
+  border: 1px solid red;
+  background-color: rgba(255, 255, 255, 0.685);
 }
 
 .App-logo {
@@ -9,14 +52,12 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
