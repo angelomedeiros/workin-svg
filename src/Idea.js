@@ -1,7 +1,7 @@
 import React from "react";
 
-export default ({ size = 96, viewBox = 400 }) => (
-  <svg viewBox={`0 0 ${size} ${size}`} width={`${viewBox}px`} height={`${viewBox}px`}>
+export default ({ size = 48 }) => (
+  <svg viewBox={`0 0 ${size} ${size}`}>
     <g className="idea">
       <path
         className="idea__brilho idea__brilho--externo idea__animation"

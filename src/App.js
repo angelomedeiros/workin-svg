@@ -4,8 +4,10 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import logo from "./logo.svg";
 import "./App.css";
 import "./svgStyles.scss";
+import brain from "./brain-clipart.svg";
 import FormasBasicas from "./FormasBasicas";
 import Idea from "./Idea";
+import StarBucks from "./StarBucks";
 
 const ContainerFormasBasicas = () => (
   <div className="App-header">
@@ -29,12 +31,16 @@ const ContainerFormasBasicas = () => (
 
 const EstilizandoSvg = () => (
   <div className="container">
-    <svg width="500" height="150">
+    <svg>
+      <use xlinkHref={`${brain}#brain`} fill="green" />
+    </svg>
+    <svg viewBox="0 0 500 150">
       <circle className="circle circle-1" r="55" cx="200" cy="75" />
       <circle className="circle circle-2" r="55" cx="250" cy="75" />
       <circle className="circle circle-3" r="55" cx="300" cy="75" />
     </svg>
     <Idea />
+    <StarBucks />
   </div>
 );
 

@@ -44,3 +44,29 @@
     transition: all 0.9s;
   }
 }
+
+#circulo-verde,
+#textos,
+#detalhe-externo {
+  transition: opacity 0.8s;
+}
+
+#inner_artwork {
+  transition: fill 5s;
+}
+
+@media (max-width: 768px) {
+  #detalhe-externo {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #circulo-verde,
+  #textos {
+    opacity: 0;
+  }
+  #inner_artwork {
+    fill: #067655;
+  }
+}
